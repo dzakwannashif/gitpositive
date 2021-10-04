@@ -1,0 +1,43 @@
+package com.example.basickotlin
+
+fun main() {
+    //membuat null dan melakukan pengecekan dengan if else
+    val b = 12
+    if (b != null){
+        println(b)
+    }else{
+        print("variable b adalah null")
+    }
+    var a :String? =null
+    if (a != null){
+        print(a)
+    }else{
+        println("variable a adalah null")
+    }
+    var c :String? = null
+    println(c?.length)
+
+    var d : String? = null
+    var e : Int = if (d !=null) d.length else -1
+    println(e)
+
+    var f = if (d !=null) d.length else -2
+    println(f)
+
+    var g = d?.length ?:-3
+    println(g)
+
+    //!! Operator
+    var h :String? = null // fungsinya jika kalian gk percaya bahwa datanya null
+//    println(h!!.length) //error karena datanya beneran null
+//
+    if (h !=null){
+        println(h)
+    }else{
+        println("bukan null oi")
+    }
+
+
+
+
+}
